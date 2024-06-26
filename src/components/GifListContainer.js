@@ -3,7 +3,6 @@ import GifList from "./GifList"
 import GifSearch from "./GifSearch"
 
 const key = "HlSJiQas7KM6z8L3zZeN6zCc7LUjFMVI"
-// const apiUrl = `https://api.giphy.com/v1/gifs/search?q=wallaceandgromit&api_key=${key}&rating=g`
 
 function GifListContainer() {
   const [gifs, setGifs] = useState(null)
@@ -29,8 +28,6 @@ function GifListContainer() {
         setGifs(gifUrls.slice(0, 3))
       })
   }, [fetchTrigger])
-
-  console.log(search)
 
   return (
     <div>
